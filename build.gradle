@@ -21,7 +21,7 @@ apply plugin: 'io.spring.dependency-management'*/
 plugins {
     id 'java'
     id 'eclipse'
-    id "org.springframework.boot" version "2.6.7"
+    id "org.springframework.boot" version "2.5.6"
     id 'io.spring.dependency-management' version "1.0.11.RELEASE"
 }
 
@@ -43,6 +43,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     implementation 'org.springframework.session:spring-session-jdbc'    // 세션용 db 관련 디펜던시
+
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    implementation 'io.springfox:springfox-swagger-ui:1.6.8'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
     //testAnnotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
